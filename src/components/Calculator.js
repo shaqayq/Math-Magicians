@@ -66,10 +66,6 @@ class Calculator extends React.Component {
       </div>
     );
   }
-
-  componentDidUpdate(){
-    console.log(this.state);
-  }
 }
 
 export default Calculator;
