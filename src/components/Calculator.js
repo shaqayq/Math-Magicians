@@ -1,6 +1,5 @@
 import React from 'react';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 /* eslint-disable */
@@ -43,7 +42,7 @@ class Calculator extends React.Component {
       <div className="container">
         <div className="resualt"><h5>{this.result()}</h5></div>
         <div className="content">
-          <button value='Ac' onClick={this.getValue} type='submit'>Ac</button>
+          <button value='AC' onClick={this.getValue} type='submit'>AC</button>
           <button value='+/-' onClick={this.getValue}  type='submit'>+/-</button> 
           <button value='%' onClick={this.getValue} type='submit'>%</button>
           <button value='÷' className="calculation" onClick={this.getValue} type='submit'>÷</button>
