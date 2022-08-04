@@ -1,30 +1,66 @@
 import React from 'react';
+import calculate from '../logic/calculate';
+
 // eslint-disable-next-line react/prefer-stateless-function
+/* eslint-disable */
 class Calculator extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state={
+      total : null,
+      next:null,
+      operation:null
+    }
+    this.getValue=this.getValue.bind(this);
+  }
+
+  getValue=(e)=>{
+    const buttonName  =e.target.value;
+    this.setState((prevValue)=>calculate({
+      ...prevValue,
+    },buttonName ));
+    
+  }
+
+  result = () => {
+    const { total, operation, next } = this.state;
+    return (
+      <>
+        {total}
+        {' '}
+        {operation}
+        {' '}
+        {next}
+      </>
+    );
+  }
+  
+  
   render() {
     return (
       <div className="container">
-        <div className="resualt"><h5>0</h5></div>
+        <div className="resualt"><h5>{this.result()}</h5></div>
         <div className="content">
-          <div className="item1"><p>Ac</p></div>
-          <div className="item2"><p>+/-</p></div>
-          <div className="item3"><p>%</p></div>
-          <div className="calculation"><p>*</p></div>
-          <div className="item1"><p>7</p></div>
-          <div className="item1"><p>8</p></div>
-          <div className="item2"><p>9</p></div>
-          <div className="calculation"><p>x</p></div>
-          <div className="item1"><p>4</p></div>
-          <div className="item1"><p>5</p></div>
-          <div className="item2"><p>6</p></div>
-          <div className="calculation"><p>-</p></div>
-          <div className="item1"><p>1</p></div>
-          <div className="item1"><p>2</p></div>
-          <div className="item2"><p>3</p></div>
-          <div className="calculation"><p>+</p></div>
-          <div className="zero"><p>0</p></div>
-          <div className="item1"><p>.</p></div>
-          <div className="calculation"><p>=</p></div>
+          <button value='AC' onClick={this.getValue} type='submit'>AC</button>
+          <button value='+/-' onClick={this.getValue}  type='submit'>+/-</button> 
+          <button value='%' onClick={this.getValue} type='submit'>%</button>
+          <button value='÷' className="calculation" onClick={this.getValue} type='submit'>÷</button>
+          <button value='7'onClick={this.getValue} type='submit'>7</button>
+          <button value='8' onClick={this.getValue} type='submit'>8</button>
+          <button value='9' onClick={this.getValue} type='submit'>9</button>
+          <button value='x' className="calculation" onClick={this.getValue} type='submit'>x</button>
+          <button value='4' onClick={this.getValue}>4</button>
+          <button value='5' onClick={this.getValue}>5</button>
+          <button value='6' onClick={this.getValue}>6</button>
+          <button value='-' className="calculation" onClick={this.getValue}>-</button>
+          <button value='1' onClick={this.getValue}>1</button>
+          <button value='2' onClick={this.getValue}>2</button>
+          <button value='3' id='button' onClick={this.getValue}>3</button>
+          <button value='+' className="calculation" onClick={this.getValue}>+</button>
+          <button value='0' className="zero" onClick={this.getValue}>0</button>
+          <button value='.' onClick={this.getValue}>.</button>
+          <button value='=' className="calculation" onClick={this.getValue}>=</button>
         </div>
       </div>
     );
