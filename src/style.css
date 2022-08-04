@@ -1,13 +1,31 @@
+body {
+  background-image: url(../public/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.title {
+  text-align: center;
+  color: #f5913e;
+  margin: 0;
+  padding-top: 47px;
+  padding-right: 52px;
+  font-size: 54px;
+}
+
 .container {
   width: 500px;
   margin-left: 29%;
-  margin-top: 10%;
+  margin-top: 5%;
+  box-shadow: 10px 5px 12px #c3c3cf;
 }
 
 .resualt {
   height: 97px;
   background-color: #858694;
   text-align: right;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .resualt h5 {

@@ -1,30 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
 /* eslint-disable */
-class Calculator extends React.Component {
+const  Calculator = () =>{
 
-  constructor(props){
-    super(props);
-    this.state={
-      total : null,
-      next:null,
-      operation:null
-    }
-    this.getValue=this.getValue.bind(this);
-  }
+  const [value , setValue] = useState({
+    total : null , 
+    next : null , 
+    operation: null,
+  });
+  
 
-  getValue=(e)=>{
-    const buttonName  =e.target.value;
-    this.setState((prevValue)=>calculate({
-      ...prevValue,
-    },buttonName ));
+ const getValue =(e)=>{
+    const buttonName =e.target.innerText;
+    setValue(calculate({...value} , buttonName));
     
   }
 
-  result = () => {
-    const { total, operation, next } = this.state;
+
+  const result = () => {
+    const { total, operation, next } = value;
     return (
       <>
         {total}
@@ -35,36 +31,37 @@ class Calculator extends React.Component {
       </>
     );
   }
-  
-  
-  render() {
-    return (
-      <div className="container">
-        <div className="resualt"><h5>{this.result()}</h5></div>
-        <div className="content">
-          <button value='AC' onClick={this.getValue} type='submit'>AC</button>
-          <button value='+/-' onClick={this.getValue}  type='submit'>+/-</button> 
-          <button value='%' onClick={this.getValue} type='submit'>%</button>
-          <button value='÷' className="calculation" onClick={this.getValue} type='submit'>÷</button>
-          <button value='7'onClick={this.getValue} type='submit'>7</button>
-          <button value='8' onClick={this.getValue} type='submit'>8</button>
-          <button value='9' onClick={this.getValue} type='submit'>9</button>
-          <button value='x' className="calculation" onClick={this.getValue} type='submit'>x</button>
-          <button value='4' onClick={this.getValue}>4</button>
-          <button value='5' onClick={this.getValue}>5</button>
-          <button value='6' onClick={this.getValue}>6</button>
-          <button value='-' className="calculation" onClick={this.getValue}>-</button>
-          <button value='1' onClick={this.getValue}>1</button>
-          <button value='2' onClick={this.getValue}>2</button>
-          <button value='3' id='button' onClick={this.getValue}>3</button>
-          <button value='+' className="calculation" onClick={this.getValue}>+</button>
-          <button value='0' className="zero" onClick={this.getValue}>0</button>
-          <button value='.' onClick={this.getValue}>.</button>
-          <button value='=' className="calculation" onClick={this.getValue}>=</button>
-        </div>
+
+  return (
+    <>
+    <h1 className='title'>Math Magician</h1>
+    <div className="container">
+      <div className="resualt"><h5>{result()}</h5></div>
+      <div className="content">
+        <button value='AC' onClick={getValue} type='submit'>AC</button>
+        <button value='+/-' onClick={getValue}  type='submit'>+/-</button> 
+        <button value='%' onClick={getValue} type='submit'>%</button>
+        <button value='÷' className="calculation" onClick={getValue} type='submit'>÷</button>
+        <button value='7'onClick={getValue} type='submit'>7</button>
+        <button value='8' onClick={getValue} type='submit'>8</button>
+        <button value='9' onClick={getValue} type='submit'>9</button>
+        <button value='x' className="calculation" onClick={getValue} type='submit'>x</button>
+        <button value='4' onClick={getValue}>4</button>
+        <button value='5' onClick={getValue}>5</button>
+        <button value='6' onClick={getValue}>6</button>
+        <button value='-' className="calculation" onClick={getValue}>-</button>
+        <button value='1' onClick={getValue}>1</button>
+        <button value='2' onClick={getValue}>2</button>
+        <button value='3' id='button' onClick={getValue}>3</button>
+        <button value='+' className="calculation" onClick={getValue}>+</button>
+        <button value='0' className="zero" onClick={getValue}>0</button>
+        <button value='.' onClick={getValue}>.</button>
+        <button value='=' className="calculation" onClick={getValue}>=</button>
       </div>
-    );
-  }
+    </div>
+    </>
+  );
+
 }
 
 export default Calculator;
