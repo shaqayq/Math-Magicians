@@ -10,7 +10,7 @@ import Home from './components/Home';
 function App() {
   return (
     <>
-    <Router basename='/Math-Magician'>
+    <Router basename='/Math-Magicians'>
       <Navbar/>
           <Routes>
             <Route path='/' element={<Home />}></Route>
