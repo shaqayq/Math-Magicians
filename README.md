@@ -10,7 +10,7 @@
 - Major languages: HTML , CSS , React.
 
 ## Live Demo (if available)
-[Live Demo Link]()
+[Live Demo Link](https://shaqayq.github.io/Math-Magicians)
 
 ## Getting Started
 
