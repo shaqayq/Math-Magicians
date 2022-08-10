@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0 solid #888;
+  box-shadow: 5px 10px 18px #888;
+}
+
+.title {
+  color: #f5913e;
+  font-size: 36px;
+  margin: 10px 0 14px 6%;
+}
+
+.navList {
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+  margin-right: 6%;
+}
+
+.navList li {
+  display: inline;
+  padding: 20px;
+}
+
+.navbar li a {
+  color: #858694;
+  text-decoration: unset;
+  font-weight: bold;
+}
+
+.navbar li a:hover {
+  color: #f5913e;
+}

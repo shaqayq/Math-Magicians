@@ -1,22 +1,17 @@
-body {
-  background-image: url(../public/bg2.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+.calculator {
+  margin: 89px;
 }
 
-.title {
-  text-align: center;
-  color: #f5913e;
-  margin: 0;
-  padding-top: 47px;
-  padding-right: 52px;
-  font-size: 54px;
+.clucTitle {
+  display: inline;
+  font-size: 40px;
+  color: #dd7b2b;
 }
 
 .container {
   width: 500px;
-  margin-left: 29%;
-  margin-top: 5%;
+  float: right;
+  margin-right: 20px;
   box-shadow: 10px 5px 12px #c3c3cf;
 }
 

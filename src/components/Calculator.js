@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import '../styles/calculator.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 /* eslint-disable */
@@ -34,7 +35,8 @@ const  Calculator = () =>{
 
   return (
     <>
-    <h1 className='title'>Math Magician</h1>
+  <div className='calculator'>
+    <h1 className='clucTitle'>Lets Do Some Math...</h1>
     <div className="container">
       <div className="resualt"><h5>{result()}</h5></div>
       <div className="content">
@@ -59,6 +61,7 @@ const  Calculator = () =>{
         <button value='=' className="calculation" onClick={getValue}>=</button>
       </div>
     </div>
+      </div>
     </>
   );
 
