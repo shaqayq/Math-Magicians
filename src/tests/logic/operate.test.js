@@ -22,12 +22,12 @@ describe.each([
   });
 });
 
-test(`Can't divide by 0.`, () => {
-  expect(operate(55,0, '÷')).toBe(`Can't divide by 0.`)
+test('Can\'t divide by 0.', () => {
+  expect(operate(55, 0, '÷')).toBe('Can\'t divide by 0.');
 });
 
-test(`Should throw error`, () => {
-  expect(()=>{
-    operate(55,10, '/')
-  }).toThrowError(`Unknown operation '/'`)
+test('Should throw error', () => {
+  expect(() => {
+    operate(55, 10, '/');
+  }).toThrowError('Unknown operation \'/\'');
 });
