@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Component test 1`] = `
+<div
+  className="calculator"
+>
+  <h1
+    className="clucTitle"
+  >
+    Lets Do Some Math...
+  </h1>
+  <div
+    className="container"
+  >
+    <div
+      className="resualt"
+    >
+      <h5>
+         
+         
+      </h5>
+    </div>
+    <div
+      className="content"
+    >
+      <button
+        onClick={[Function]}
+        type="submit"
+        value="AC"
+      >
+        AC
+      </button>
+      <button
+        onClick={[Function]}
+        type="submit"
+        value="+/-"
+      >
+        +/-
+      </button>
+      <button
+        onClick={[Function]}
+        type="submit"
+        value="%"
+      >
+        %
+      </button>
+      <button
+        className="calculation"
+        onClick={[Function]}
+        type="submit"
+        value="÷"
+      >
+        ÷
+      </button>
+      <button
+        onClick={[Function]}
+        type="submit"
+        value="7"
+      >
+        7
+      </button>
+      <button
+        onClick={[Function]}
+        type="submit"
+        value="8"
+      >
+        8
+      </button>
+      <button
+        onClick={[Function]}
+        type="submit"
+        value="9"
+      >
+        9
+      </button>
+      <button
+        className="calculation"
+        onClick={[Function]}
+        type="submit"
+        value="x"
+      >
+        x
+      </button>
+      <button
+        onClick={[Function]}
+        value="4"
+      >
+        4
+      </button>
+      <button
+        onClick={[Function]}
+        value="5"
+      >
+        5
+      </button>
+      <button
+        onClick={[Function]}
+        value="6"
+      >
+        6
+      </button>
+      <button
+        className="calculation"
+        onClick={[Function]}
+        value="-"
+      >
+        -
+      </button>
+      <button
+        onClick={[Function]}
+        value="1"
+      >
+        1
+      </button>
+      <button
+        onClick={[Function]}
+        value="2"
+      >
+        2
+      </button>
+      <button
+        id="button"
+        onClick={[Function]}
+        value="3"
+      >
+        3
+      </button>
+      <button
+        className="calculation"
+        onClick={[Function]}
+        value="+"
+      >
+        +
+      </button>
+      <button
+        className="zero"
+        onClick={[Function]}
+        value="0"
+      >
+        0
+      </button>
+      <button
+        onClick={[Function]}
+        value="."
+      >
+        .
+      </button>
+      <button
+        className="calculation"
+        onClick={[Function]}
+        value="="
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home Component test 1`] = `
+<div
+  className="homeContent"
+>
+  <h1
+    className="homeTitle"
+  >
+    Welocom To our page!
+  </h1>
+  <p
+    className="homePargraph"
+  >
+    A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.However, more sophisticated calculators can handle exponential operations, square roots, logarithms, trigonometric functions and hyperbolic functions. Internally, some calculators perform all these functions by repeated addition processes. Most calculators these days require electricity to operate or are battery-powered calculators. Calculators work by performing programmed functions based on numerical inputs.Before the electronic calculator (circa 1970), a more primitive calculator, the slide rule, was commonly used. It consisted of a slat of wood called the slide that could be moved in and out of a reinforced pair of slats. Both the slide and the outer pair of slats had calibrated numerical scales.
+  </p>
+</div>
+`;
+
+exports[`Navbar Component test 1`] = `
+<nav
+  className="navbar"
+>
+  <h1
+    className="title"
+  >
+    Math Magician
+  </h1>
+  <ul
+    className="navList"
+  >
+    <li>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Quote Component test 1`] = `
+<div
+  className="quoteContent"
+>
+  <h5
+    className="quotePargraph"
+  >
+    Mathematic is not about numbers, equations, computationsor algorithm. it is about understanding.
+  </h5>
+  <h6
+    className="owner"
+  >
+    -Wiliom paul Thurston
+  </h6>
+</div>
+`;
