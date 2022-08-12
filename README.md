@@ -9,8 +9,10 @@
 
 - Major languages: HTML , CSS , React.
 
-## Live Demo (if available)
-[Live Demo Link](https://shaqayq.github.io/Math-Magicians)
+## Live Demos 
+- [Live Demo Link with Github page](https://shaqayq.github.io/Math-Magicians)
+- [Live Demo Link with Netlify](https://ubiquitous-tanuki-e7cce1.netlify.app/)
+- [Live Demo Link with Heroku](https://math-magician3.herokuapp.com/)
 
 ## Getting Started
 
